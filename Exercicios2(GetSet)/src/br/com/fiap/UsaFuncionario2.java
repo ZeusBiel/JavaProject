@@ -14,7 +14,8 @@ public class UsaFuncionario2 {
 			funcionario1.setNome(scan.nextLine());
 			System.out.println("Digite o valor ganho por hora: ");
 			funcionario1.setValorHora(scan.nextFloat());
-			System.out.println("Salario total: "+funcionario1.salario(8));
+			System.out.println("Digite as horas de trabalho por semana: ");
+			System.out.println("Nome: "+funcionario1.getNome()+"\nValor hora: "+funcionario1.getValorHora()+"\nSalario total: "+funcionario1.salario(scan.nextInt()));
 		} catch (Exception e) {
 			System.out.println("Nome e/ou valor hora inválidos");
 		}
