@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Fantasma e Molly McGee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61;
+            color: white;
+            border-radius: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .character-card {
+            background-color: white;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>O Fantasma e <span th:text="${nome}">M</span> McGee</h1>
+    <p>Acompanhe as aventuras de Molly e seu amigo fantasma!</p>
+</header>
+
+<div class="container">
+    <div class="character-card">
+        <h2>Molly McGee</h2>
+        <p>Molly é uma garota otimista e cheia de energia, sempre pronta para ajudar os outros.</p>
+    </div>
+    <div class="character-card">
+        <h2>O Fantasma</h2>
+        <p>Um fantasma rabugento que acaba se tornando o melhor amigo de Molly.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 O Fantasma e Molly McGee. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
